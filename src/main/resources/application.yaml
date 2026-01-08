@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: KavalaMed
+
+  datasource:
+    url: ${URL_DB}
+    username: ${USERNAME_DB}
+    password: ${PASSWORD_DB}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+
+  jwt:
+    secret: ${JWT_SECRET}
+    accessTokenExpiration: 300 # 5 minutes
+    refreshTokenExpiration: 604800 # 7 days
+
+  admin:
+    key: ${ADMIN_KEY}
